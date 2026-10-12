@@ -3,224 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mahmoud Hamdy - Links</title>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6011280709177221"
-     crossorigin="anonymous"></script>
+<meta name="theme-color" content="#080d24">
+<meta name="description" content="Official social links of Mahmoud Hamdy.">
+<title>Mahmoud Hamdy | Links</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-  min-height: 100vh;
-  /* خلفية متدرجة توحي بليل رمضان */
-  background: radial-gradient(circle at center, #1a3c4a 0%, #0f2027 100%);
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  direction: rtl;
-  overflow-x: hidden;
-  position: relative;
-}
-
-/* تأثير النجوم في الخلفية */
-body::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background-image: radial-gradient(#fff 1px, transparent 1px);
-  background-size: 50px 50px;
-  opacity: 0.1;
-  z-index: 1;
-}
-
-/* ===== FANOUS (الفوانيس) ===== */
-/* .fanous {
-  position: absolute;
-  top: -10px;
-  width: 45px;
-  height: 75px;
-  background: linear-gradient(#ffd27d, #d4a84f);
-  border-radius: 8px;
-  z-index: 3; */
-  /* أنيميشن التأرجح والنبض الضوئي */
-  animation: swing 4s ease-in-out infinite, glow 2s ease-in-out infinite alternate;
-}
-
-.fanous::before {
-  content: "";
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 30px;
-  background: #f5c77a;
-}
-
-.f1 { left: 15%; animation-delay: 0s; }
-.f2 { left: 50%; animation-delay: 1s; }
-.f3 { left: 85%; animation-delay: 2s; }
-
-@keyframes swing {
-  0%, 100% { transform: rotate(-6deg); transform-origin: top center; }
-  50% { transform: rotate(6deg); transform-origin: top center; }
-}
-
-@keyframes glow {
-  from { box-shadow: 0 0 15px rgba(255, 210, 125, 0.6), 0 0 30px rgba(255, 210, 125, 0.2); }
-  to { box-shadow: 0 0 25px rgba(255, 210, 125, 0.9), 0 0 50px rgba(255, 210, 125, 0.4); }
-}
-
-/* ===== CARD (الكارت الرئيسي) ===== */
-.container {
-  width: 90%;
-  max-width: 400px;
-  padding: 40px 20px;
-  border-radius: 30px;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-  position: relative;
-  z-index: 2;
-  animation: fadeUp 1.2s ease-out;
-}
-
-.avatar {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  margin: 0 auto 15px;
-  background-image: url('IMG_20251216_181624_640.jpg');
-  background-size: cover;
-  background-position: center;
-  border: 3px solid #f5c77a;
-  box-shadow: 0 0 20px rgba(245, 199, 122, 0.3);
-}
-
-h1 {
-  font-size: 24px;
-  margin-bottom: 8px;
-  color: #f5c77a;
-  letter-spacing: 0.5px;
-}
-
-.slogan {
-  display: block;
-  margin-bottom: 30px;
-  font-size: 14px;
-  color: #d1d1d1;
-}
-
-/* LINKS (الروابط) */
-.links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px; /* مسافة بين الأيقونة والنص */
-  text-decoration: none;
-  color: #1a3c4a;
-  background: linear-gradient(135deg, #f5c77a, #d4a84f);
-  padding: 14px;
-  margin-bottom: 15px;
-  border-radius: 15px;
-  font-weight: 700;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.links a i {
-  font-size: 1.2rem;
-}
-
-.links a:hover {
-  transform: translateY(-5px);
-  background: linear-gradient(135deg, #fff, #f5c77a);
-  box-shadow: 0 10px 20px rgba(245, 199, 122, 0.4);
-}
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-  /* ===== FOOTER ===== */
-.footer-text {
-  margin-top: 40px;
-  font-size: 12px;
-  color: white ;
-  opacity: 0.6;
-  
+:root{--bg:#080d24;--panel:rgba(11,20,49,.82);--text:#f5f7ff;--muted:#a7b1cf;--blue:#2388ff;--purple:#8957ff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;padding:38px 16px;display:flex;align-items:center;justify-content:center;overflow-x:hidden;color:var(--text);font-family:Inter,Cairo,sans-serif;background:radial-gradient(ellipse at 8% 18%,rgba(120,40,255,.30),transparent 30%),radial-gradient(ellipse at 95% 12%,rgba(0,126,255,.30),transparent 32%),radial-gradient(ellipse at 80% 95%,rgba(91,0,255,.24),transparent 35%),linear-gradient(145deg,#080d24,#060b1b 65%,#0c1030)}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.23;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:62px 62px}
+.glow{position:fixed;width:320px;height:320px;border-radius:50%;filter:blur(100px);opacity:.16;pointer-events:none}.glow.a{background:#176cff;top:20%;left:-180px}.glow.b{background:#a12cff;right:-170px;bottom:8%}
+.page{width:100%;max-width:450px;position:relative;z-index:1;animation:rise .7s ease both}
+.eyebrow{text-align:center;margin-bottom:16px;font-size:10px;font-weight:700;letter-spacing:4px;color:#9ba8ff}
+.card{position:relative;overflow:hidden;padding:31px 22px 22px;border:1px solid rgba(111,139,255,.4);border-radius:29px;background:linear-gradient(145deg,rgba(20,34,81,.88),rgba(5,12,33,.94) 58%,rgba(18,14,57,.88));backdrop-filter:blur(22px);box-shadow:0 25px 85px #0008,0 0 50px #3436ff13,inset 0 1px 0 #ffffff12}
+.card:before{content:"";position:absolute;top:0;left:12%;width:76%;height:1px;background:linear-gradient(90deg,transparent,#48a6ff,#b16cff,transparent)}
+.profile{text-align:center;margin-bottom:25px}
+.avatar-ring{width:118px;height:118px;padding:4px;margin:0 auto 17px;border-radius:50%;background:linear-gradient(135deg,#b16cff,#438bff,#30d5ff);box-shadow:0 0 0 7px #5e62ff10,0 0 32px #397aff50}
+.avatar{width:100%;height:100%;display:block;object-fit:cover;object-position:center;border-radius:50%;border:3px solid #111b40;background:#172344}
+h1{font-size:clamp(25px,6vw,32px);font-weight:800;letter-spacing:-1px;line-height:1.3}
+h1 span{background:linear-gradient(90deg,#36c9ff,#9b70ff);background-clip:text;-webkit-background-clip:text;color:transparent}
+.subtitle{margin-top:10px;color:#c1c9e7;font-family:Cairo,sans-serif;font-size:14px}
+.divider{display:flex;align-items:center;justify-content:center;gap:11px;margin-top:15px;color:#8a9dff;font-size:12px}
+.divider:before,.divider:after{content:"";height:1px;width:42px;background:linear-gradient(90deg,transparent,#628cff)}
+.divider:after{transform:rotate(180deg)}
+.links{display:grid;gap:10px}
+.link{--accent:#4f9bff;min-height:59px;display:flex;align-items:center;gap:13px;padding:9px 13px;border:1px solid color-mix(in srgb,var(--accent) 70%,transparent);border-radius:17px;text-decoration:none;color:var(--text);background:linear-gradient(105deg,color-mix(in srgb,var(--accent) 13%,#09142e),#ffffff05);transition:transform .22s,border-color .22s,box-shadow .22s,background .22s;-webkit-tap-highlight-color:transparent}
+.link:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 8px 26px color-mix(in srgb,var(--accent) 19%,transparent);background:linear-gradient(105deg,color-mix(in srgb,var(--accent) 22%,#09142e),#ffffff0a)}
+.link:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.icon{width:39px;height:39px;flex-shrink:0;display:grid;place-items:center;border-radius:13px;background:color-mix(in srgb,var(--accent) 18%,transparent);color:var(--accent);font-size:19px}
+.label{flex:1;font-size:14px;font-weight:600}.arrow{color:#aab6d6;font-size:12px;transition:transform .2s}.link:hover .arrow{transform:translateX(3px);color:var(--accent)}
+.whatsapp{--accent:#25d366}.telegram{--accent:#28b9f5}.facebook{--accent:#3984ff}.instagram{--accent:#d95bff}.snapchat{--accent:#ffe34b}.tiktok{--accent:#ff4e91}.youtube{--accent:#ff535d}.email{--accent:#9581ff}.application{--accent:#28d4e8}
+footer{margin-top:21px;padding-top:19px;border-top:1px solid #ffffff16;text-align:center;color:#9da9c9;font-size:11px;line-height:1.9}footer a{color:#71baff;text-decoration:none;font-weight:700}footer a:hover{text-decoration:underline}.crown{display:block;margin-top:9px;color:#8e78ff;font-size:15px}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:380px){body{padding:22px 11px}.card{padding:25px 14px 18px;border-radius:24px}.avatar-ring{width:103px;height:103px}.link{min-height:55px;padding:8px 10px;gap:10px}.icon{width:36px;height:36px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
 </style>
 </head>
-
 <body>
-
-<div class="fanous f1"></div>
-<div class="fanous f2"></div>
-<div class="fanous f3"></div>
-
-<div class="container">
-  <div class="avatar"></div>
-  <h1>Mahmoud Hamdy</h1>
-  <span class="slogan">﴿ صلِّ على النبي محمد ﷺ ﴾</span>
-
-  <div class="links">
-    <a href="https://wa.me/201014531530?text=السلام%20عليكم" target="_blank">
-      <i class="fab fa-whatsapp"></i> WhatsApp
-    </a>
-    <a href="https://t.me/+201014531530?text=السلام%20عليكم">
-      <i class="fab fa-telegram"></i> Telegram
-    </a>
-    <a href="https://www.facebook.com/share/1DwSnQERad/" target="_blank">
-      <i class="fab fa-facebook-f"></i> Facebook
-    </a>
-    <a href="https://www.instagram.com/mahmoudhamdy2200" target="_blank">
-      <i class="fab fa-instagram"></i> Instagram
-    </a>
-    <a href="https://www.snapchat.com/add/mahmoud_hamdy34" target="_blank">
-      <i class="fab fa-snapchat-ghost"></i> Snapchat
-    </a>
-    <a href="https://www.tiktok.com/@mahmoudhamdy2200" target="_blank">
-      <i class="fab fa-tiktok"></i> TikTok
-    </a>
-    <a href="https://youtube.com/@mahmoudhamdy7753" target="_blank">
-      <i class="fab fa-youtube"></i> YouTube
-    </a>
-    <a href="mailto:qqlqwertyu1234@gmail.com">
-      <i class="fas fa-envelope"></i> Email
-    </a>
-    <a href="https://hamuxe.lovable.app" target="_blank">
-      <i class="fas fa-mobile-alt"></i> My Application
-    </a>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6011280709177221"
-     crossorigin="anonymous"></script>
-<!-- hamux -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6011280709177221"
-     data-ad-slot="7692858616"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-  </div>
-  <!-- Footer -->
-<footer>
-  © 2026 — Developed by 
-  <a href="https://www.facebook.com/share/16xpAXtp99/" target="_blank">
-    Mahmoud Hamdy
-  </a>
-</footer>
-
+<div class="glow a"></div><div class="glow b"></div>
+<main class="page">
+  <div class="eyebrow">S T A Y&nbsp; C O N N E C T E D</div>
+  <section class="card">
+    <header class="profile">
+      <div class="avatar-ring"><img class="avatar" src="IMG_20251216_181624_640.jpg" alt="Mahmoud Hamdy"></div>
+      <h1>Mahmoud <span>Hamdy</span></h1>
+      <p class="subtitle" lang="ar" dir="rtl">﴿ صلِّ على النبي محمد ﷺ ﴾</p>
+      <div class="divider" aria-hidden="true">✦ ✧ ✦</div>
+    </header>
+    <nav class="links" aria-label="Social media links">
+      <a class="link whatsapp" href="https://wa.me/201014531530?text=السلام%20عليكم" target="_blank" rel="noopener noreferrer"><span class="icon"><i class="fa-brands fa-whatsapp"></i></span><span class="label">WhatsApp</span><i class="fa-solid fa-chevron-right arrow"></i></a>
+      <a class="link telegram" href="https://t.me/+201014531530" target="_blank" rel="noopener noreferrer"><span class="icon"><i class="fa-brands fa-telegram"></i></span><span class="label">Telegram</span><i class="fa-solid fa-chevron-right arrow"></i></a>
+      <a class="link facebook" href="https://www.facebook.com/share/1DwSnQERad/" target="_blank" rel="noopener noreferrer"><span class="icon"><i class="fa-brands fa-facebook-f"></i></span><span class="label">Facebook</span><i class="fa-solid fa-chevron-right arrow"></i></a>
+      <a class="link instagram" href="https://www.instagram.com/mahmoudhamdy2200" target="_blank" rel="noopener noreferrer"><span class="icon"><i class="fa-brands fa-instagram"></i></span><span class="label">Instagram</span><i class="fa-solid fa-chevron-right arrow"></i></a>
+      <a class="link snapchat" href="https://www.snapchat.com/add/mahmoud_hamdy34" target="_blank" rel="noopener noreferrer"><span class="icon"><i class="fa-brands fa-snapchat"></i></span><span class="label">Snapchat</span><i class="fa-solid fa-chevron-right arrow"></i></a>
+      <a class="link tiktok" href="https://www.tiktok.com/@mahmoudhamdy2200" target="_blank" rel="noopener noreferrer"><span class="icon"><i class="fa-brands fa-tiktok"></i></span><span class="label">TikTok</span><i class="fa-solid fa-chevron-right arrow"></i></a>
+      <a class="link youtube" href="https://youtube.com/@mahmoudhamdy7753" target="_blank" rel="noopener noreferrer"><span class="icon"><i class="fa-brands fa-youtube"></i></span><span class="label">YouTube</span><i class="fa-solid fa-chevron-right arrow"></i></a>
+      <a class="link email" href="mailto:qqlqwertyu1234@gmail.com"><span class="icon"><i class="fa-solid fa-envelope"></i></span><span class="label">Email</span><i class="fa-solid fa-chevron-right arrow"></i></a>
+      <a class="link application" href="https://hamuxe.lovable.app" target="_blank" rel="noopener noreferrer"><span class="icon"><i class="fa-solid fa-mobile-screen-button"></i></span><span class="label">My Application</span><i class="fa-solid fa-chevron-right arrow"></i></a>
+    </nav>
+    <footer>© 2026 — Developed by <a href="https://www.facebook.com/share/16xpAXtp99/" target="_blank" rel="noopener noreferrer">Mahmoud Hamdy</a><span class="crown" aria-hidden="true">♛</span></footer>
+  </section>
+</main>
 </body>
 </html>
